@@ -1,0 +1,38 @@
+/* /////////////////////////////// //  БАЗОВЫЕ СТИЛИ /////////////////////////////// */
+@import "fonts";
+@import "variables";
+@import "functions";
+@import "null";
+@import "usefull";
+@import "container";
+@import "wrapper";
+@import "section";
+/*components*/
+@import "components/app-button";
+@import "components/f-faq";
+@import "components/data-tabs";
+@import "components/publish-card";
+@import "components/lang-select";
+@import "components/logo";
+@import "components/submenu";
+@import "components/contact-feat-list";
+/*common */
+@import "header/menu-button";
+@import "header/header";
+@import "header/header-actions";
+@import "blocks/footer";
+/*index page*/
+@import "blocks/promo";
+@import "blocks/clients";
+@import "blocks/securing-section";
+@import "blocks/industies-section";
+@import "blocks/book-call-section";
+@import "blocks/regions-section";
+@import "blocks/text-section";
+@import "blocks/trusted-section";
+/* second page */
+@import "blocks/statistics-section";
+@import "blocks/publish-section";
+@import "blocks/publish-tabs";
+@import "blocks/tabs-controls";
+@import "blocks/faq-section";

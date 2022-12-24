@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: $font-family;
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 700;
+  height: auto;
+  background: transparent;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  outline: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  line-height: 100%;
+  font-size: 100%;
+  font-family: $font-family;
+  cursor: pointer;
+  border: 0;
+}

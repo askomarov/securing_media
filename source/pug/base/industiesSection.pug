@@ -1,0 +1,55 @@
+mixin industiesSection()
+  -
+    var featList = [
+      {
+        mod: "ecommerce",
+        title: "eCommerce",
+        href: "#",
+      },
+      {
+        mod: "technology",
+        title: "Technology",
+        href: "#",
+      },
+      {
+        mod: "travel",
+        title: "Travel",
+        href: "#",
+      },
+      {
+        mod: "automotive",
+        title: "Automotive",
+        href: "#",
+      },
+      {
+        mod: "finance",
+        title: "Finance",
+        href: "#",
+      },
+      {
+        mod: "health",
+        title: "Health & Beauty",
+        href: "#",
+      },
+      {
+        mod: "gaming",
+        title: "iGaming",
+        href: "#",
+      },
+      {
+        mod: "crypto",
+        title: "Crypto",
+        href: "#",
+      },
+    ]
+
+  section.industies-section.section(id="industies")
+    .container
+      h2.industies-section__title Industries
+      p.industies-section__text It was popularised with the release sheets containing passages and more recently with software.
+
+      ul.industies-feat-list
+        each item in featList
+          li.industies-feat-list__item(class=`industies-feat-list__item--${item.mod}`)
+            +icon(item.mod, 75, 75).industies-feat-list__item-img
+            p.industies-feat-list__item-title= item.title

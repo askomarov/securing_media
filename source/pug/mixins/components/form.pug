@@ -1,0 +1,26 @@
+mixin form()
+  form.form(class!=attributes.class)
+    .form__row-2
+      .form-group
+        label(for='name')
+        input#name.form__input(type='text' placeholder='Name' name='name')
+      .form-group
+        label(for='company')
+        input#company.form__input(type='text' placeholder='company' name='company')
+    .form__row-2
+      .form-group
+        label(for='email')
+        input#email.form__input(type='email' placeholder='Email' name='email' required)
+      .form-group
+        label(for='phone')
+        input#phone.form__input(type='tel' placeholder='Phone Number' name='phone')
+    .form-group
+      label(for='website')
+      input#website.form__input(type='text' placeholder='Website' name='website')
+    .form-group
+      label(for='budget')
+      input#budget.form__input(type='text' placeholder='Budget' name='budget')
+    .form-group
+      label(for='comment')
+      textarea#comment.form__input.form__input--textarea(placeholder='Project Detail' name='comment')
+    a(href="#").form__button-submit.app-button.app-button--primary Book a call

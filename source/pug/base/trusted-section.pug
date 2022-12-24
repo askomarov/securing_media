@@ -1,0 +1,44 @@
+mixin trusted-section()
+  -
+    var featList = [
+      {
+        img: "etoro",
+        href: '#',
+        size:{
+          x: '146',
+          y: '47'
+        }
+      },
+      {
+        img: "unibet",
+        href: '#',
+        size:{
+          x: '140',
+          y: '50'
+        }
+      },
+      {
+        img: "vpn",
+        href: '#',
+        size:{
+          x: '217',
+          y: '41'
+        }
+      },
+      {
+        img: "888",
+        href: '#',
+        size:{
+          x: '112',
+          y: '56'
+        }
+      },
+    ]
+
+  section.trusted-section.section(id="trusted")
+    .container
+      h2 Trusted by
+      .trusted-list
+        each item in featList
+          a(href=item.href).trusted-list__item
+            +imgWebp('trusted',`${item.img}`, 'png', item.size.x, item.size.y, `${item.img} logo`).trusted-list__item-img

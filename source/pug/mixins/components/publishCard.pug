@@ -1,0 +1,35 @@
+mixin publishCard(price, href, modif)
+  .publish-card(class=`publish-card--${modif}`)
+    h3.publish-card__title Digital PR
+      br
+      | Outreach
+    .publish-card__content
+      ul
+        li 100% Manual Outreach
+        li Minimum DA20+ Site
+        li 500 Word Article
+
+      p.publish-card__price
+        small From
+        span &euro; #{price}
+        small  Per Link
+
+      a(href=href).publish-card__button Order Now
+
+      .publish-card__delivery
+        +icon('calendar', 24, 24)
+        p Delivery: 28 Days
+      h4.publish-card__title-bulk Bulk Discount
+      .bulk-row
+        span 1-9
+        span $288.15
+      .bulk-row
+        span 10-19
+        span $276.85
+      .bulk-row
+        span 20-29
+        span $265.55
+      .bulk-row
+        span 30+
+        span $254.25
+

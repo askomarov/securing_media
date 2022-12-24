@@ -1,0 +1,25 @@
+.section {
+  text-align: center;
+
+  h2 {
+    font-weight: 700;
+    font-size: rem(30px);
+    line-height: 36px;
+    text-transform: uppercase;
+
+    @media (min-width: $width-tablet) {
+      font-size: rem(40px);
+      line-height: 48px;
+    }
+  }
+
+  h2 + p {
+    font-weight: 700;
+    font-size: rem(16px);
+    line-height: 30px;
+
+    @media (min-width: $width-tablet) {
+      font-size: rem(18px);
+    }
+  }
+}

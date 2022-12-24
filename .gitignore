@@ -1,0 +1,9 @@
+.vscode
+package-lock.json
+*.ai
+*.log
+*.pdf
+*.psd
+node_modules/
+Thumbs.db
+dist

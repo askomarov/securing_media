@@ -1,0 +1,21 @@
+.publish-tabs__cards-list {
+  padding: rem(24px) 0;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 270px;
+  align-items: stretch;
+  gap: 1rem;
+
+  @media (min-width: $width-mobile-h) {
+    padding: rem(50px) 0;
+    max-width: 100%;
+    grid-template-columns: repeat(2, 270px);
+  }
+
+  @media (min-width: $width-tablet-h) {
+
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

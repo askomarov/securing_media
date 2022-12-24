@@ -1,0 +1,157 @@
+.securing-section {
+  background-color: var(--color-white);
+  padding-top: 110px;
+  padding-bottom: 101px;
+
+  @media (min-width: $width-tablet-h) {
+    padding-top: 140px;
+    padding-bottom: 160px;
+  }
+}
+
+.securing-section__title {
+  margin-bottom: 20px;
+}
+
+.securing-section__text {
+  margin-inline: auto;
+  margin-bottom: 40px;
+  max-width: 560px;
+  text-transform: capitalize;
+}
+
+.securing-feat-list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: minmax(auto, 370px);
+  gap: 30px;
+  align-items: start;
+
+  @media (min-width: $width-tablet) {
+    grid-template-columns: repeat(2, 350px);
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-template-columns: repeat(4, 270px);
+  }
+}
+
+.securing-feat-list__item {
+  position: relative;
+  background: var(--promo-gradient);
+  color: var(--color-white);
+  padding: 36px 36px 60px;
+  border-radius: 6px;
+  overflow: hidden;
+
+  &:hover {
+    background: var(--red-700);
+  }
+
+  &::before {
+    content: "";
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    margin-inline: auto;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 18px;
+  }
+}
+
+
+.securing-feat-list__item-title {
+  text-transform: uppercase;
+  font-size: rem(18px);
+  line-height: 22px;
+  margin-bottom: 1rem;
+}
+
+.securing-feat-list__item-text {
+  font-size: rem(15px);
+  line-height: 18px;
+  font-weight: 400;
+  margin: 0 auto 1.5rem;
+  max-width: 290px;
+
+  @media (min-width: $width-tablet) {
+    font-size: rem(14px);
+    line-height: 17px;
+  }
+}
+
+.securing-feat-list__item-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+
+  &::after {
+    content: "";
+    display: block;
+    position: relative;
+    bottom: -2px;
+    width: 24px;
+    height: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.58984 16.58L13.1698 12L8.58984 7.41L9.99984 6L15.9998 12L9.99984 18L8.58984 16.58Z' fill='white'/%3E%3C/svg%3E%0A");
+    transition: transform 0.2s ease 0s;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.securing-feat-list__item--niche {
+  &::before {
+    background-image: url("../img/securing/niche.svg");
+  }
+}
+
+.securing-feat-list__item--blogger {
+  &::before {
+    background-image: url("../img/securing/blogger.svg");
+  }
+}
+
+.securing-feat-list__item--marketing {
+  &::before {
+    background-image: url("../img/securing/marketing.svg");
+  }
+}
+
+.securing-feat-list__item--digital {
+  &::before {
+    background-image: url("../img/securing/digital.svg");
+  }
+}
+
+.securing-feat-list__item--report {
+  &::before {
+    background-image: url("../img/securing/report.svg");
+  }
+}
+
+.securing-feat-list__item--source {
+  &::before {
+    background-image: url("../img/securing/source.svg");
+  }
+}
+
+.securing-feat-list__item--qwoted {
+  &::before {
+    background-image: url("../img/securing/qwoted.png");
+  }
+}
+
+.securing-feat-list__item--terkel {
+  &::before {
+    background-image: url("../img/securing/terkel.svg");
+  }
+}

@@ -1,0 +1,44 @@
+mixin publish-section()
+  -
+    var tabs = [
+      {
+        active: true,
+        text: ""
+      },
+      {
+        active: false,
+        text: "Premium"
+      }
+    ]
+  section.publish-section.section(id="publica")
+    .container
+      h2 Types of Outreach we provide in the UK
+      .publish-tabs(data-tabs="parent")
+        .publish-tabs__tabs-controls.tabs-controls(data-tabs="controls")
+          // class="tabs-controls__button is-active"
+          // class="is-active[data-index="1"]"
+          button.tabs-controls__button(type="button" class='is-active', data-tabs="control")
+            span &euro; GBP
+          button.tabs-controls__button(type="button"  data-tabs="control")
+            span &#36; USD
+          .tabs-controls__active-tab
+
+        .publish-tabs__tabs-content(data-tabs="content")
+          // tab 1
+          .publish-tabs__cards-list(data-tabs="element")
+            //- publishCard(price, href, modif)
+            +publishCard('288', '#', 'red')
+            +publishCard('288', '#', 'yellow')
+            +publishCard('288', '#', 'blue')
+            +publishCard('288', '#', 'green')
+
+
+          // tabs 2
+          .publish-tabs__cards-list(data-tabs="element")
+            +publishCard('150', '#', 'red')
+            +publishCard('155', '#', 'yellow')
+            +publishCard('160', '#', 'blue')
+            +publishCard('177', '#', 'green')
+
+
+      +appButton('primary', 'link', '#contact', 'BOOK A CALL FOR CUSTOM REQUREMENTS').publish-section__button-publica

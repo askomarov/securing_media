@@ -1,0 +1,90 @@
+.industies-section {
+  padding-top: 46px;
+  padding-bottom: 115px;
+  background-color: #f2f2f2;
+
+  @media (min-width: $width-tablet-h) {
+    padding-top: 75px;
+    padding-bottom: 113px;
+  }
+}
+
+.industies-section__title {
+  margin-bottom: 10px;
+}
+
+.industies-section__text {
+  margin-inline: auto;
+  margin-bottom: 24px;
+  max-width: 560px;
+  text-transform: capitalize;
+}
+
+.industies-feat-list {
+  display: inline-grid;
+  justify-content: center;
+  gap: 1px;
+  background-color: #cacaca;
+  grid-template-columns: 185px 185px;
+
+  @media (min-width: $width-tablet-h) {
+    grid-template-columns: repeat(4, 270px);
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-template-columns: repeat(4, 311px);
+  }
+}
+
+.industies-feat-list__item {
+  cursor: pointer;
+  padding: 40px;
+  background-color: #f2f2f2;
+
+  &:hover {
+    background: var(--color-white);
+    box-shadow: 0 -2px 30px rgba(92, 92, 92, 0.25);
+    position: relative;
+    z-index: 1;
+    color: var(--blue-500);
+  }
+
+  @media (min-width: $width-tablet-h) {
+    padding-bottom: 50px;
+  }
+}
+
+.industies-feat-list__item-img {
+  margin-bottom: 23px;
+  margin-inline: auto;
+}
+
+.industies-feat-list__item-title {
+  font-size: rem(18px);
+  line-height: 22px;
+}
+
+.industies-feat-list__item--ecommerce {
+}
+
+
+.industies-feat-list__item--technology {
+}
+
+.industies-feat-list__item--travel {
+}
+
+.industies-feat-list__item--automotive {
+}
+
+.industies-feat-list__item--finance {
+}
+
+.industies-feat-list__item--health {
+}
+
+.industies-feat-list__item--gaming {
+}
+
+.industies-feat-list__item--crypto {
+}

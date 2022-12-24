@@ -1,0 +1,25 @@
+mixin site-breadcrumbs()
+  -
+    var breadcrumbs = [
+        {
+          text:'Design',
+          link: "#",
+        },
+        {
+          text:'Digital Design',
+          link: "#",
+        },
+        {
+          text:'Web & Mobile Design',
+          link: "#",
+        },
+        {
+          text:'Graphic UI',
+          link: "#",
+        },
+      ]
+
+  .site-breadcrumbs(class!=attributes.class)
+    .site-breadcrumbs__wrap
+      each link in breadcrumbs
+        a(href=link.link)= link.text

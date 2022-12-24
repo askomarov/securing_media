@@ -1,0 +1,213 @@
+mixin regionsSection()
+  -
+    var regions = [
+      {
+        mod: "germany",
+        title: "Germany",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "spain",
+        title: "Spain",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "france",
+        title: "France",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "romanian",
+        title: "Romanian",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "nederlands",
+        title: "Nederlands",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "italy",
+        title: "Italy",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "portugal",
+        title: "Portugal",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "sweden",
+        title: "Sweden",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "denmark",
+        title: "Denmark",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "norway",
+        title: "Norway",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "finland",
+        title: "Finland",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "usa",
+        title: "USA",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "uk",
+        title: "UK",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "canada",
+        title: "Canada",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "australia",
+        title: "Australia",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "czech",
+        title: "czech",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "turkey",
+        title: "turkey",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "new-zeland",
+        title: "New Zeeland",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "poland",
+        title: "Poland",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "нungary",
+        title: "Hungary",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "brazil",
+        title: "Brazil",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "colombia",
+        title: "Colombia",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "mexico",
+        title: "Mexico",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "argentina",
+        title: "Argentina",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "thailand",
+        title: "Thailand",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "japan",
+        title: "japan",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "vietnam",
+        title: "Vietnam",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "korea",
+        title: "Korea",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "bulgaria",
+        title: "Bulgaria",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "grecee",
+        title: "Grecee",
+        text: '3523 sites',
+        href: "#",
+      },
+      {
+        mod: "chile",
+        title: "Chile",
+        text: '3523 sites',
+        href: "#",
+        hiddend: true,
+      },
+      {
+        mod: "croatia",
+        title: "Croatia",
+        text: '3523 sites',
+        href: "#",
+        hiddend: true,
+      },
+    ]
+
+  section.regions-section.section(id="regions")
+    .container
+      h2.regions-section__title Your Media in 90+ Regions
+      p.regions-section__text It was popularised with the release sheets containing passages and more recently with software.
+
+      ul.regions-cards
+        each item in regions
+          li.region-card(class= item.hiddend ? 'region-card--m-hiddend' : '')
+            +imgWebp('regions',`${item.mod}`, 'png', 51, 51, 'flag').region-card__img
+            h3.region-card__title= item.title
+            a(href=item.href).region-card__link= item.text
+
+      +appButton('primary', 'link', '#', 'EXPLORE OUR FULL REGIONS')
+

@@ -1,0 +1,23 @@
+.contact-feat-list {
+  display: grid;
+  gap: rem(16px);
+  text-align: left;
+}
+
+.contact-feat-list__item {
+  background-color: var(--color-white);
+  padding: 14px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contact-feat-list__item-icon {
+  content: "";
+  display: block;
+  flex: 0 0 51px;
+  width: 51px;
+  height: 51px;
+  margin-right: 40px;
+  color: var(--icon-contact-color);
+}

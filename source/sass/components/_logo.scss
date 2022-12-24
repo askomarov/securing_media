@@ -1,0 +1,38 @@
+.logo {
+  font-weight: 400;
+  font-size: rem(16px);
+  line-height: 19px;
+  text-transform: uppercase;
+
+  @media (min-width: $width-tablet) {
+    font-size: rem(24px);
+    line-height: 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    font-size: rem(36px);
+    line-height: 43px;
+  }
+}
+
+.logo__icon {
+  margin-right: 8.5px;
+
+  @media (min-width: $width-tablet) {
+    width: 30px;
+    height: auto;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 43px;
+    height: 31px;
+    margin-right: 14px;
+  }
+}
+
+.logo__word {
+}
+
+.logo__word--bold {
+  font-weight: 700;
+}

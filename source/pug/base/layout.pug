@@ -1,0 +1,39 @@
+doctype html
+
+include ../base/mixins
+include ../base/header
+include ../base/footer
+
+block variables
+
+html(lang="en")
+  head
+    title= title
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="description" content="Eliteremoters")
+    meta(name="msapplication-TileColor" content="#3b2291")
+    meta(name="theme-color" content="#ffffff")
+    //- link(rel="preload" href="fonts/Barlow-Bold.woff2" as="font" type="font/woff2" crossorigin)
+    //- link(rel="preload" href="fonts/Barlow-Medium.woff2" as="font" type="font/woff2" crossorigin)
+    link(rel="stylesheet" href="css/variables.css")
+    //- link(rel="stylesheet" href="css/style.clean.min.css")
+    link(rel="stylesheet" href="css/style.min.css")
+
+  body
+    +sprite()
+    .wrapper(class=wrapperMods)
+      img(src='img/decor-m.png' width="1133" height="920" alt="decor img").main__bg-decor
+      img(src='img/bg.svg' width="2002" height="1113" alt="decor img").main__bg-img
+      if (hasHeader)
+        +header(headerMods, currentPage)
+
+      block main
+
+      if (hasFooter)
+        +footer(footerMods)
+
+    block modals
+
+    script(src="js/main.min.js")

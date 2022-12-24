@@ -1,0 +1,85 @@
+.f-faq {
+}
+
+.f-faq__item {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  box-shadow: 0 5px 0 var(--red-700);
+}
+
+.f-faq__item summary {
+  padding: 20px 30px;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: flex-start;
+
+  &::marker,
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.f-faq__item summary .f-faq__summary-item-text {
+  width: 100%;
+  position: relative;
+}
+
+.f-faq__item-icon {
+  transition: all 0.1s ease 0s;
+}
+
+.f-faq__item[open] > {
+  summary {
+    color: var(--text-black-color);
+    border-bottom: 1px solid #000000;
+  }
+
+  summary .f-faq__item-button {
+    &::before {
+      transform: translate(-50%, -50%) rotate(90deg);
+    }
+  }
+}
+
+.f-faq__item-content {
+  padding: rem(20px);
+}
+
+.f-faq__item-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  position: relative;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    background: var(--red-700);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1px;
+    transition: transform 0.3s ease 0s;
+    transform-origin: center;
+  }
+
+  &::after {
+    width: 16px;
+    height: 3px;
+  }
+
+  &::before {
+    height: 16px;
+    width: 3px;
+  }
+}

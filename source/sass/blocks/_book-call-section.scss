@@ -1,0 +1,119 @@
+.book-call-section {
+  padding-top: 82px;
+  padding-bottom: 114px;
+  background-color: var(--blue-300);
+  color: var(--color-white);
+  background-image: url("../img/book-call/book-call-bg-m.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+
+  h2 + p {
+    font-weight: 500;
+    font-size: rem(18px);
+    line-height: 30px;
+  }
+
+  @media (min-width: $width-tablet) {
+    background-image: url("../img/book-call/book-call-bg-xl.png");
+    padding-bottom: 96px;
+  }
+}
+
+.book-call-section__title {
+  margin-bottom: 11px;
+}
+
+.book-call-section__text {
+  padding-bottom: 30px;
+  margin: 0 auto 40px;
+  text-transform: capitalize;
+  position: relative;
+  max-width: 580px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 4px;
+    background-color: var(--red-700);
+  }
+}
+
+.book-call-cards {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: minmax(auto, 370px);
+  gap: 37px;
+
+  @media (min-width: $width-tablet) {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $width-tablet-h) {
+    grid-template-columns: repeat(2, 370px);
+    gap: 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    grid-template-columns: repeat(2, 570px);
+  }
+}
+
+.book-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+  color: var(--text-black-color);
+  padding: 29px 22px 38px 25px;
+
+  ul {
+    text-align: left;
+    margin-bottom: 30px;
+
+    li {
+      padding-left: 32px;
+      position: relative;
+      font-size: rem(18px);
+      line-height: 33px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 8px;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        background-repeat: no-repeat;
+        background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.3333 13.6668V8.16683H15.1667V13.6668C15.1667 14.1531 14.9735 14.6194 14.6297 14.9632C14.2859 15.307 13.8196 15.5002 13.3333 15.5002H2.33333C1.31583 15.5002 0.5 14.6752 0.5 13.6668V2.66683C0.5 1.64933 1.31583 0.833496 2.33333 0.833496H9.66667V2.66683H2.33333V13.6668H13.3333ZM5.00083 5.49016L7.83333 8.32266L13.8742 2.28183L15.1667 3.5835L7.83333 10.9168L3.70833 6.79183L5.00083 5.49016Z' fill='black'/%3E%3C/svg%3E%0A");
+        background-size: cover;
+      }
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 56px 46px 51px;
+  }
+}
+
+.book-call-feat-list__item-title {
+  text-align: left;
+  color: var(--red-700);
+  font-size: rem(28px);
+  margin-bottom: 1rem;
+
+  @media (min-width: $width-desktop) {
+    font-size: rem(30px);
+    margin-bottom: 26px;
+  }
+}
+
+.book-card__button {
+  margin-left: 0;
+  display: flex;
+  width: 219px;
+  text-align: left;
+}

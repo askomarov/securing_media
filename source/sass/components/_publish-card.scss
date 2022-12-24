@@ -1,0 +1,177 @@
+.publish-card {
+  position: relative;
+  background: #ffffff;
+  border: 2px solid #e2e2e2;
+  border-radius: 4px;
+  text-align: left;
+  color: var(--text-black-color);
+
+  ul {
+    margin-bottom: 20px;
+  }
+
+  li {
+    padding-block: 10px;
+    font-size: rem(18px);
+    line-height: 20px;
+    font-weight: 500;
+    border-bottom: 1px dashed #cccccc;
+    padding-left: 30px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 0;
+      width: 18px;
+      height: 18px;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    @media (min-width: $width-tablet-h) {
+      padding-left: 48px;
+    }
+  }
+}
+
+.publish-card--red {
+  --bg: var(--red-700);
+
+  li {
+    &::after {
+      background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.75 5.25L6.75 14.25L2.625 10.125L3.6825 9.0675L6.75 12.1275L14.6925 4.1925L15.75 5.25Z' fill='%23F72C25'/%3E%3C/svg%3E%0A");
+    }
+  }
+}
+
+.publish-card--yellow {
+  --bg: var(--yellow);
+
+  .publish-card__title,
+  .publish-card__button {
+    color: var(--text-black-color);
+  }
+
+  li {
+    &::after {
+      background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.75 5.25L6.75 14.25L2.625 10.125L3.6825 9.0675L6.75 12.1275L14.6925 4.1925L15.75 5.25Z' fill='%23f9cc6e'/%3E%3C/svg%3E%0A");
+    }
+  }
+}
+
+.publish-card--green {
+  --bg: var(--green);
+
+  li {
+    &::after {
+      background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.75 5.25L6.75 14.25L2.625 10.125L3.6825 9.0675L6.75 12.1275L14.6925 4.1925L15.75 5.25Z' fill='%2327cb49'/%3E%3C/svg%3E%0A");
+    }
+  }
+}
+
+.publish-card--blue {
+  --bg: var(--blue-100);
+
+  .publish-card__title {
+    background: radial-gradient(95.08% 95.08% at 50% 4.92%, #0c02f3 0%, #4841e6 100%);
+  }
+
+  li {
+    &::after {
+      background-image: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M15.75 5.25L6.75 14.25L2.625 10.125L3.6825 9.0675L6.75 12.1275L14.6925 4.1925L15.75 5.25Z' fill='%233A33E8'/%3E%3C/svg%3E%0A");
+    }
+  }
+}
+
+.publish-card__content {
+  padding: 22px 20px 30px;
+}
+
+.publish-card__title {
+  text-align: center;
+  border-radius: 4px;
+  padding: 16px 10px;
+  background: var(--bg);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--color-white);
+
+  @media (min-width: $width-desktop) {
+    padding: 31px 10px;
+    font-size: 30px;
+  }
+}
+
+.publish-card__price {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  margin-bottom: 25px;
+
+  small {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $width-desktop) {
+    font-size: 56px;
+    margin-bottom: 34px;
+  }
+}
+
+.publish-card__button {
+  background: var(--bg);
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  border-radius: 4px;
+  max-width: 300px;
+  margin: 0 auto 8px;
+  height: 50px;
+  width: 100%;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      transform: translateY(-3px);
+    }
+
+    &:active {
+      box-shadow: none;
+      transform: translateY(0);
+    }
+  }
+}
+
+.publish-card__delivery {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7px;
+  font-size: rem(18px);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.publish-card__title-bulk {
+  color: var(--bg);
+  font-size: rem(22px);
+  line-height: 37px;
+}
+
+.bulk-row {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px dashed #cccccc;
+}

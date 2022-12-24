@@ -1,0 +1,25 @@
+extends ../base/layout
+include ../base/promo
+include ../clients/clients
+include ../base/securingSection
+include ../base/industiesSection
+include ../base/book-callSection
+include ../base/regionsSection
+
+block variables
+  - const title = "Securing Media"
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentPage = 0
+
+block main
+  main.main
+    +promo()
+    +clients()
+    +securingSection()
+    +industiesSection()
+    +book-callSection()
+    +regionsSection()

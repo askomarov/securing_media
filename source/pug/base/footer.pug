@@ -1,0 +1,57 @@
+mixin footer()
+  footer.site-footer.footer
+    .container.footer__top-container.accordion
+      .footer__column
+        // class="footer__title is-open"
+        h3.footer__title Despre Media Galaxy
+        ul.footer__footer-nav.footer-nav
+          li.footer-nav__item
+            a.footer-nav__link(href='#') Despre noi
+          li.footer-nav__item
+            a.footer-nav__link(href='#') Cariere Media
+          li.footer-nav__item
+            a.footer-nav__link(href='#') Galaxy recomanda
+      .footer__column
+        h3.footer__title Suport Clienti
+        ul.footer__footer-nav.footer-nav
+          li.footer-nav__item
+            a.footer-nav__link(href='#') Articole Suport
+          li.footer-nav__item
+            a.footer-nav__link(href='#') Contact
+          li.footer-nav__item
+            a.footer-nav__link(href='#') Returneaza produse
+      .footer__column
+        h3.footer__title Informatii legale
+        ul.footer__footer-nav.footer-nav
+          li.footer-nav__item
+            a.footer-nav__link(href='#') Termeni si Conditi
+          li.footer-nav__item
+            a.footer-nav__link(href='#') Politca cookie-uri
+          li.footer-nav__item
+            a.footer-nav__link(href='#') Informatii privind DEEE
+      .footer__column
+        h3.footer__title Contact
+        ul.footer__footer-nav.footer-nav
+          li.footer-nav__item
+            a.footer-nav__link Telefon: 201/9196
+          li.footer-nav__item
+            a.footer-nav__link Fax: 021/319.99.39
+      .footer__column
+        h3.footer__title Urmareste-na
+        ul.footer__socials-list
+          li.footer-nav__item
+            a.footer__socials-link(href='#' target='_blank' aria-label='link to linkedin')
+              +icon('youtube', 49, 33)
+          li.footer-nav__item
+            a.footer__socials-link(href='#' target='_blank' aria-label='link to twitter')
+              +icon('linkedin', 49, 33)
+          li.footer-nav__item
+            a.footer__socials-link(href='#' target='_blank' aria-label='link to facebook')
+              +icon('twitter', 49, 33)
+
+    // footer copy
+    .footer__bottom
+      .footer__bottom-container.container
+        p.footer__copy &copy; 2022 Securing Mediay Ltd. Trademarks and brands are the property of their respective owners.
+
+

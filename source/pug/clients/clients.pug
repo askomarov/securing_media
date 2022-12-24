@@ -1,0 +1,39 @@
+mixin clients()
+  -
+    var featList = [
+      {
+        img: "semrush",
+        size:{
+          x: '120',
+          y: '41'
+        }
+      },
+      {
+        img: "ahrefs",
+        size:{
+          x: '167',
+          y: '31'
+        }
+      },
+      {
+        img: "moz",
+        size:{
+          x: '106',
+          y: '106'
+        }
+      },
+      {
+        img: "majestic",
+        size:{
+          x: '156',
+          y: '99'
+        }
+      },
+    ]
+
+  .clients(id="clients")
+    .container
+      ul.clients__list
+        each item in featList
+          li.clients__list-item(class=`clients__list-item--${item.img}`)
+            +imgWebp('clients',`${item.img}`, 'png', item.size.x, item.size.y, `${item.img} logo`).clients__list-item-img

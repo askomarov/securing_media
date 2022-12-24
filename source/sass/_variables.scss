@@ -1,0 +1,46 @@
+$min-width: 320 + px;
+$max-width: 1230 + px;
+$width-mobile: 320 + px;
+$width-mobile-h: 667 + px;
+$width-tablet: 767 + px;
+$width-tablet-h: 1024 + px;
+$width-desktop: 1340 + px;
+$width-desktop-h: 1900 + px;
+
+$transition: 0.3s ease-out 0s;
+$font-family: "Barlow", "Arial", sans-serif;
+$fz-default: 16px;
+
+$btn-border-radius: 20px;
+
+:root {
+  --text-color: #333333;
+  --color-white: #ffffff;
+  --text-gray-color: #3d3d3d;
+  --text-black-color: #000000;
+  --primary-color: #ff8125;
+  --primary-color-500: #f1631c;
+  --primary-yellow: #fec224;
+  --yellow: #f9cc6e;
+  --grey-200: #ececec;
+  --blue-500: #161196;
+  --blue-300: #241eac;
+  --blue-100: #3931e8;
+  --green: #27cb49;
+
+  --border-color: #e0eff5;
+  --border-radius: 4px;
+  --box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  --promo-gradient: linear-gradient(251.9deg, #1d1b55 39.1%, #2821d9 82.97%);
+  --gradient-red: linear-gradient(180deg, #ff6f6a 0%, #bd1711 100%);
+  --gradient-green: linear-gradient(180deg, #2cff73 0%, #239820 100%);
+  --gradient-yellow: linear-gradient(180deg, #ffd47d 0%, #d99b0f 100%, #ffe86d 100%);
+  --gradient-blue: linear-gradient(180deg, #251cff 0%, #2a25a8 100%);
+
+  --submenu-bg: #c6231e;
+  --submenu-hover-bg: #da3e38;
+
+  --red-700: #f72c25;
+
+  --primary-button: #f72c25;
+}

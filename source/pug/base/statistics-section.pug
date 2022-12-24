@@ -1,0 +1,37 @@
+mixin statistics-section()
+  -
+    var featList = [
+      {
+        modif: "english",
+        text: "English blogs & platforms",
+        nums: 15680,
+      },
+      {
+        modif: "link",
+        text: "Link Opportunities",
+        nums: 3451,
+      },
+      {
+        modif: "new",
+        text: "English news Website",
+        nums: 1069,
+      },
+      {
+        modif: "google",
+        text: "positions Climbed in google",
+        nums: 87532,
+      },
+    ]
+
+  section.statistics-section.section(id="statistics")
+    .container
+      h2.statistics-section__title Statistics
+      p.statistics-section__text It was popularised with the release sheets containing passages and more recently with software.
+
+      .statistics-list
+        each item in featList
+          .statistics-item
+            +imgWebp('statistics',item.modif, 'png', 94, 94, item.modif).statistics-item__img
+            p.statistics-item__nums= item.nums
+            h3.statistics-item__text= item.text
+

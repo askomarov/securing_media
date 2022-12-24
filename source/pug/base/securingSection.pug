@@ -1,0 +1,64 @@
+mixin securingSection()
+  -
+    var featList = [
+      {
+        mod: "blogger",
+        title: "Blogger Outreach",
+        text: "Lorem Ipsum has been the industry's standard dummy text ever since.",
+        href: "#",
+      },
+      {
+        mod: "niche",
+        title: "NiChe Edits",
+        text: "Lorem Ipsum has been the industry's standard dummy text ever since.",
+        href: "#",
+      },
+      {
+        mod: "marketing",
+        title: "Content Marketing",
+        text: "Lorem Ipsum has been the industry's standard dummy text ever since.",
+        href: "#",
+      },
+      {
+        mod: "digital",
+        title: "Digital PR",
+        text: "Lorem Ipsum has been the industry's standard dummy text ever since.",
+        href: "#",
+      },
+      {
+        mod: "report",
+        title: "Help a Reporter Out",
+        text: "Lorem Ipsum has been the industry's standard dummy text ever since.",
+        href: "#",
+      },
+      {
+        mod: "source",
+        title: "Source Bottle",
+        text: "Lorem Ipsum has been the industry's standard dummy text ever since.",
+        href: "#",
+      },
+      {
+        mod: "qwoted",
+        title: "Qwoted",
+        text: "Lorem Ipsum has been the industry's standard dummy text ever since.",
+        href: "#",
+      },
+      {
+        mod: "terkel",
+        title: "Terkel",
+        text: "Lorem Ipsum has been the industry's standard dummy text ever since.",
+        href: "#",
+      },
+    ]
+
+  section.securing-section.section(id="securing")
+    .container
+      h2.securing-section__title Securing Your Media Placements
+      p.securing-section__text It was popularised with the release sheets containing passages and more recently with software.
+
+      ul.securing-feat-list
+        each item in featList
+          li.securing-feat-list__item(class=`securing-feat-list__item--${item.mod}`)
+            p.securing-feat-list__item-title= item.title
+            p.securing-feat-list__item-text= item.text
+            a(href=item.href).securing-feat-list__item-link Explore

@@ -1,0 +1,8 @@
+mixin appButton(appearance, type, href, text, newpage)
+  if type === 'link'
+    if newpage === true
+      a(href=href target="_blank" rel="noopener noreferrer" class!=attributes.class, class=`app-button app-button--${appearance}`)= text
+    else
+      a(href=href class!=attributes.class, class=`app-button app-button--${appearance}`)= text
+  else
+    button(type="button" class!=attributes.class, class=`app-button app-button--${appearance}`)= text

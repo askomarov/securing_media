@@ -1,0 +1,27 @@
+extends ../base/layout
+include ../base/promo
+include ../clients/clients
+include ../base/publish-section
+include ../base/statistics-section
+include ../base/text-section
+include ../base/trusted-section
+include ../base/faqSection
+
+block variables
+  - const title = "Securing Media - internal"
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentPage = 1
+
+block main
+  main.main
+    +promo()
+    +clients()
+    +publish-section()
+    +statistics-section()
+    +text-section()
+    +trusted-section()
+    +faqSection()

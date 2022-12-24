@@ -1,0 +1,31 @@
+mixin book-callSection()
+  -
+    var featList = [
+      {
+        mod: "ecommerce",
+        title: "Order Multilingual Content",
+        list: ['Native Content Writers', '2500 Articles Placed', '25 + Languages'],
+        href: "#",
+      },
+      {
+        mod: "technology",
+        title: "Digital PR Campaign",
+        list: ['Publish on 50,000 websites', '2500 Articles Placed', '25 + Languages'],
+        href: "#",
+      },
+    ]
+
+  section.book-call-section.section(id="book-call")
+    .container
+      h2.book-call-section__title Book a Call
+      p.book-call-section__text It was popularised with the release sheets containing passages and more recently with software.
+
+      .book-call-cards
+        each item in featList
+          .book-card
+            h3.book-call-feat-list__item-title= item.title
+            ul
+              each li in item.list
+                li= li
+            a(href="#").book-card__button.app-button.app-button--primary Book call
+
