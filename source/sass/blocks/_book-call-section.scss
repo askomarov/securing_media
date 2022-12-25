@@ -1,6 +1,6 @@
 .book-call-section {
-  padding-top: 82px;
-  padding-bottom: 114px;
+  padding-top: 35px;
+  padding-bottom: 50px;
   background-color: var(--blue-300);
   color: var(--color-white);
   background-image: url("../img/book-call/book-call-bg-m.png");
@@ -16,7 +16,8 @@
 
   @media (min-width: $width-tablet) {
     background-image: url("../img/book-call/book-call-bg-xl.png");
-    padding-bottom: 96px;
+    padding-top: 45px;
+    padding-bottom: 60px;
   }
 }
 
@@ -55,7 +56,7 @@
   }
 
   @media (min-width: $width-tablet-h) {
-    grid-template-columns: repeat(2, 370px);
+    grid-template-columns: repeat(2, 450px);
     gap: 30px;
   }
 
@@ -69,10 +70,13 @@
   border-radius: 4px;
   color: var(--text-black-color);
   padding: 29px 22px 38px 25px;
+  display: flex;
+  flex-direction: column;
 
   ul {
     text-align: left;
     margin-bottom: 30px;
+    flex: 1 0 auto;
 
     li {
       padding-left: 32px;
@@ -116,4 +120,9 @@
   display: flex;
   width: 219px;
   text-align: left;
+  align-self: center;
+
+  @media (min-width: $width-desktop) {
+    align-self: flex-start;
+  }
 }

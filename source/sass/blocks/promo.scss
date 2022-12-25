@@ -110,16 +110,18 @@
   align-content: center;
   font-weight: 700;
   font-size: rem(20px);
-  line-height: rem(30px);
+  line-height: rem(25px);
   min-height: 120px;
 
   @media (min-width: $width-mobile-h) {
     height: 171px;
-    font-size: rem(30px);
-    line-height: rem(40px);
+    font-size: rem(24px);
+    line-height: rem(34px);
   }
 
   @media (min-width: $width-desktop) {
+    font-size: rem(32px);
+    line-height: rem(38px);
     height: 216px;
   }
 }

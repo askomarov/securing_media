@@ -25,20 +25,21 @@
   justify-content: center;
   gap: 1px;
   background-color: #cacaca;
-  grid-template-columns: 185px 185px;
+  grid-template-columns: 1fr 1fr;
 
-  @media (min-width: $width-tablet-h) {
-    grid-template-columns: repeat(4, 270px);
+  @media (min-width: 428px) {
+    grid-template-columns: 185px 185px;
   }
 
-  @media (min-width: $width-desktop) {
-    grid-template-columns: repeat(4, 311px);
+  @media (min-width: $width-tablet-h) {
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 .industies-feat-list__item {
   cursor: pointer;
-  padding: 40px;
+  padding: 20px;
   background-color: #f2f2f2;
 
   &:hover {
@@ -47,6 +48,10 @@
     position: relative;
     z-index: 1;
     color: var(--blue-500);
+  }
+
+  @media (min-width: $width-mobile-h) {
+    padding: 40px;
   }
 
   @media (min-width: $width-tablet-h) {

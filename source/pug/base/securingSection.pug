@@ -5,49 +5,49 @@ mixin securingSection()
         mod: "blogger",
         title: "Blogger Outreach",
         text: "Lorem Ipsum has been the industry's standard dummy text ever since.",
-        href: "#",
+        href: "https://www.google.ru/",
       },
       {
         mod: "niche",
         title: "NiChe Edits",
         text: "Lorem Ipsum has been the industry's standard dummy text ever since.",
-        href: "#",
+        href: "https://www.google.ru/",
       },
       {
         mod: "marketing",
         title: "Content Marketing",
         text: "Lorem Ipsum has been the industry's standard dummy text ever since.",
-        href: "#",
+        href: "https://www.google.ru/",
       },
       {
         mod: "digital",
         title: "Digital PR",
         text: "Lorem Ipsum has been the industry's standard dummy text ever since.",
-        href: "#",
+        href: "https://www.google.ru/",
       },
       {
         mod: "report",
         title: "Help a Reporter Out",
         text: "Lorem Ipsum has been the industry's standard dummy text ever since.",
-        href: "#",
+        href: "https://www.google.ru/",
       },
       {
         mod: "source",
         title: "Source Bottle",
         text: "Lorem Ipsum has been the industry's standard dummy text ever since.",
-        href: "#",
+        href: "https://www.google.ru/",
       },
       {
         mod: "qwoted",
         title: "Qwoted",
         text: "Lorem Ipsum has been the industry's standard dummy text ever since.",
-        href: "#",
+        href: "https://www.google.ru/",
       },
       {
         mod: "terkel",
         title: "Terkel",
         text: "Lorem Ipsum has been the industry's standard dummy text ever since.",
-        href: "#",
+        href: "https://www.google.ru/",
       },
     ]
 
@@ -61,4 +61,6 @@ mixin securingSection()
           li.securing-feat-list__item(class=`securing-feat-list__item--${item.mod}`)
             p.securing-feat-list__item-title= item.title
             p.securing-feat-list__item-text= item.text
-            a(href=item.href).securing-feat-list__item-link Explore
+            a(href=item.href target="_blank").securing-feat-list__item-link Explore
+              span.securing-feat-list__item-link-icon
+              span.securing-feat-list__item-link-inderline

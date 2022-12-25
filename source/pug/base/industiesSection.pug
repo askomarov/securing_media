@@ -48,8 +48,8 @@ mixin industiesSection()
       h2.industies-section__title Industries
       p.industies-section__text It was popularised with the release sheets containing passages and more recently with software.
 
-      ul.industies-feat-list
+      .industies-feat-list
         each item in featList
-          li.industies-feat-list__item(class=`industies-feat-list__item--${item.mod}`)
+          a.industies-feat-list__item(class=`industies-feat-list__item--${item.mod}` href="https://www.google.ru/" target="_blank")
             +icon(item.mod, 75, 75).industies-feat-list__item-img
             p.industies-feat-list__item-title= item.title

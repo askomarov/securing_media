@@ -1,12 +1,17 @@
 .regions-section {
   background: var(--color-white);
-  padding-top: 53px;
-  padding-bottom: 128px;
+  padding-top: 40px;
+  padding-bottom: 60px;
 
   h2 + p {
     font-weight: 500;
     font-size: rem(16px);
     line-height: 30px;
+  }
+
+  @media (min-width: $width-tablet) {
+    padding-top: 53px;
+    padding-bottom: 128px;
   }
 }
 
@@ -35,12 +40,17 @@
   background-color: #d3d3d3;
   padding: 1px;
   max-width: 388px;
-  margin: 0 auto 74px;
+  margin: 0 auto 24px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1px;
 
-  @media (min-width: 800px) {
+  @media (min-width: 420px) {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 74px;
+  }
+
+  @media (min-width: 768px) {
     max-width: 100%;
     grid-template-columns: repeat(4, 1fr);
   }
@@ -52,8 +62,12 @@
 
 .region-card {
   background: var(--color-white);
-  padding: 14px;
+  padding: 10px;
   position: relative;
+
+  @media (min-width: 400px) {
+    padding: 14px;
+  }
 
   &:hover {
     background-color: var(--red-700);
@@ -72,19 +86,32 @@
 .region-card--m-hiddend {
   display: none;
 
-  @media (min-width: 800px) {
+  @media (min-width: 768px) {
     display: block;
   }
 }
 
 .region-card__img {
   margin-bottom: 8px;
+  width: 40px;
+  height: 40px;
+
+  @media (min-width: 400px) {
+    width: 51px;
+    height: 51px;
+  }
 }
 
 .region-card__title {
-  font-size: rem(16px);
+  font-size: rem(14px);
   line-height: 19px;
-  margin-bottom: 9px;
+  margin-bottom: 2px;
+
+  @media (min-width: 400px) {
+    font-size: rem(16px);
+    line-height: 19px;
+    margin-bottom: 9px;
+  }
 }
 
 .region-card__link {
