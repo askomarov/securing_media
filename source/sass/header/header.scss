@@ -99,6 +99,29 @@
       display: none;
     }
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 24px;
+    background: transparent;
+    top: 100%;
+    left: 0;
+  }
+
+
+  &:hover {
+    &::before {
+      width: 100%;
+    }
+
+    .submenu {
+      opacity: 1;
+      visibility: visible;
+      z-index: 1;
+    }
+  }
 }
 
 .header-menu__link {

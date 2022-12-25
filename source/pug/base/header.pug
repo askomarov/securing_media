@@ -70,8 +70,8 @@ mixin header(headerMods, currentPage)
                 a.header-menu__link(href=link.href)=link.text
             else
               li.header-menu__item.header-menu__item--submenu
-                a.header-menu__link.submenu-toggle(easy-toggle=`#${link.submenuID}` easy-class="active")=link.text
-                ul.submenu(id=link.submenuID)
+                a.header-menu__link.submenu-toggle=link.text
+                ul.submenu
                   each submenuItem in link.items
                     li.submenu__item
                       a.submenu__item-link(href=submenuItem.href)=submenuItem.text
