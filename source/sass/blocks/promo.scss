@@ -9,7 +9,11 @@
     padding-top: 80px;
   }
 
-  @media (min-width: $width-desktop-h) {
+  @media (min-width: 1024px) {
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: 1880px) {
     padding-top: 160px;
     padding-bottom: 169px;
   }

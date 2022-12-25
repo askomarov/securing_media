@@ -90,9 +90,9 @@
     width: 0;
     height: 0;
     border-width: 5px 0 5px 5px;
-    border-color: transparent transparent transparent #ffffff;
+    border-color: transparent transparent transparent var(--color-white);
     border-style: solid;
-    transition: transform 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
     transform: rotate(90deg);
 
     @media (max-width: 1024px) {
@@ -112,6 +112,11 @@
 
 
   &:hover {
+    &::after {
+      border-color: transparent transparent transparent var(--red-700);
+      transform: rotate(-90deg);
+    }
+
     &::before {
       width: 100%;
     }
@@ -136,13 +141,13 @@
     bottom: -8px;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--primary-color);
+    background: currentcolor;
     transition: width 0.3s ease 0s;
   }
 
   @media (hover: hover) {
     &:hover {
-      color: var(--primary-color);
+      color: var(--red-700);
 
       &::before {
         width: 115%;
