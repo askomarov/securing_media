@@ -31,17 +31,21 @@ const initHeader = () => {
 
   headerLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      if (headerMenu.classList.contains("header-menu--opened")) {
+      if (
+        headerMenu.classList.contains("header-menu--opened") &&
+        link.href &&
+        link.href.split("#")[1] !== ""
+      ) {
         closeMenu();
-      }
-      let target = document.querySelector("#" + link.href.split("#")[1]);
+        let target = document.querySelector("#" + link.href.split("#")[1]);
 
-      if (target) {
-        window.scroll({
-          behavior: "smooth",
-          left: 0,
-          top: target.offsetTop,
-        });
+        if (target) {
+          window.scroll({
+            behavior: "smooth",
+            left: 0,
+            top: target.offsetTop,
+          });
+        }
       }
     });
   });

@@ -163,7 +163,10 @@
 
 .securing-feat-list__item--qwoted {
   &::before {
-    background-image: url("../img/securing/qwoted.png");
+    background-image: image-set(
+      url("../img/securing/qwoted.webp") 1x,
+      url("../img/securing/qwoted.png") 1x,
+    );
   }
 }
 

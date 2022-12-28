@@ -9,17 +9,21 @@
   top: calc(100% + 1rem);
   left: 0;
 
-  @media (max-width: 1024px) {
-    margin-top: 24px;
-    top: initial;
-    left: initial;
-    position: relative;
-    opacity: 1;
-    visibility: visible;
-    z-index: 1;
-  }
+  // @media (max-width: 1024px) {
+  //   margin-top: 24px;
+  //   top: initial;
+  //   left: initial;
+  //   position: relative;
+  //   opacity: 1;
+  //   visibility: visible;
+  //   z-index: 1;
+  // }
 }
-
+.submenu.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
 .submenu__item {
   font-size: rem(14px);
   line-height: 40px;

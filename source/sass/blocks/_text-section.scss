@@ -50,4 +50,13 @@
       margin-bottom: 15px;
     }
   }
+
+  a {
+    color: var(--red-700);
+    font-weight: 600;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

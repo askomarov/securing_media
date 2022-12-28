@@ -3,7 +3,10 @@
   padding-bottom: 50px;
   background-color: var(--blue-300);
   color: var(--color-white);
-  background-image: url("../img/book-call/book-call-bg-m.png");
+  background-image: image-set(
+    url("../img/book-call/book-call-bg-m.webp") 1x,
+    url("../img/book-call/book-call-bg-m.png") 1x,
+  );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
@@ -15,7 +18,10 @@
   }
 
   @media (min-width: $width-tablet) {
-    background-image: url("../img/book-call/book-call-bg-xl.png");
+    background-image: image-set(
+      url("../img/book-call/book-call-bg-xl.webp") 1x,
+      url("../img/book-call/book-call-bg-xl.png") 1x,
+    );
     padding-top: 45px;
     padding-bottom: 60px;
   }

@@ -96,7 +96,8 @@
     transform: rotate(90deg);
 
     @media (max-width: 1024px) {
-      display: none;
+      top: 20px;
+      right: -8px;
     }
   }
 
@@ -110,21 +111,22 @@
     left: 0;
   }
 
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover {
+      &::after {
+        border-color: transparent transparent transparent var(--red-700);
+        transform: rotate(-90deg);
+      }
 
-  &:hover {
-    &::after {
-      border-color: transparent transparent transparent var(--red-700);
-      transform: rotate(-90deg);
-    }
+      &::before {
+        width: 100%;
+      }
 
-    &::before {
-      width: 100%;
-    }
-
-    .submenu {
-      opacity: 1;
-      visibility: visible;
-      z-index: 1;
+      .submenu {
+        opacity: 1;
+        visibility: visible;
+        z-index: 1;
+      }
     }
   }
 }

@@ -60,7 +60,7 @@
   line-height: 36px;
   font-weight: 500;
 
-  &:hover {
+  &:hover:not(.footer-nav__link--tel) {
     text-decoration: underline;
   }
 }

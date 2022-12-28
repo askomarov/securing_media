@@ -70,8 +70,8 @@ mixin header(headerMods, currentPage)
                 a.header-menu__link(href=link.href)=link.text
             else
               li.header-menu__item.header-menu__item--submenu
-                a.header-menu__link.submenu-toggle=link.text
-                ul.submenu
+                span.header-menu__link.submenu-toggle(easy-toggle=`#${link.submenuID}` easy-class="active")=link.text
+                ul.submenu(id=link.submenuID)
                   each submenuItem in link.items
                     li.submenu__item
                       a.submenu__item-link(href=submenuItem.href)=submenuItem.text
@@ -80,7 +80,7 @@ mixin header(headerMods, currentPage)
       .header-actions__lang-select.lang-select(id="lang-select")
         .lang-select__selected-value(easy-toggle="#lang-select" easy-class="active")
           .lang-select__selected-img-wrap
-            +imgWebp('','flag-uk', 'png', 37, 37, 'uk')
+            +imgWebp('regions','uk', 'png', 37, 37, 'uk')
           .lang-select__selected-text en
         ul.lang-select__options-list
           li.lang-select__option
