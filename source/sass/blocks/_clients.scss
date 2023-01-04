@@ -42,10 +42,18 @@
 
 
 .clients__list-item--ahrefs {
+  margin-top: -5px;
+
+  img {
+    width: 170px;
+    height: auto;
+    max-width: 100%;
+  }
+
+
   @media (min-width: $width-tablet) {
     img {
       width: 217px;
-      height: 47px;
     }
   }
 }

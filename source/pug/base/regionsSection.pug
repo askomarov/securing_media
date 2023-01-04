@@ -204,7 +204,7 @@ mixin regionsSection()
 
       ul.regions-cards
         each item in regions
-          li.region-card(class= item.hiddend ? 'region-card--m-hiddend' : '')
+          li.region-card
             +imgWebp('regions',`${item.mod}`, 'png', 51, 51, 'flag').region-card__img
             h3.region-card__title= item.title
             a(href=item.href).region-card__link= item.text

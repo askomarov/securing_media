@@ -4,8 +4,8 @@
   background-color: var(--blue-300);
   color: var(--color-white);
   background-image: image-set(
-    url("../img/book-call/book-call-bg-m.webp") 1x,
-    url("../img/book-call/book-call-bg-m.png") 1x
+    url("../img/book-call/book-call-bg-m-min.png") 1x
+    url("../img/book-call/book-call-bg-m-min.webp") 1x,
   );
   background-repeat: no-repeat;
   background-size: cover;
@@ -26,8 +26,8 @@
 
   @media (min-width: $width-tablet) {
     background-image: image-set(
-      url("../img/book-call/book-call-bg-xl.webp") 1x,
-      url("../img/book-call/book-call-bg-xl.png") 1x,
+      url("../img/book-call/book-call-bg-xl-min.png") 1x,
+      url("../img/book-call/book-call-bg-xl-min.webp") 1x,
     );
     padding-top: 70px;
     padding-bottom: 130px;

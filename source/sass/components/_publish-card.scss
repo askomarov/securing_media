@@ -126,7 +126,7 @@
 
 .publish-card__button {
   background: var(--bg);
-  display: inline-flex;
+  display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -153,11 +153,15 @@
 .publish-card__delivery {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 7px;
   font-size: rem(18px);
   font-weight: 500;
   margin-bottom: 20px;
+
+  @media (min-width: $width-mobile-h) {
+    justify-content: flex-start;
+  }
 }
 
 .publish-card__title-bulk {
